@@ -8,9 +8,9 @@ from requests.exceptions import RequestException
 def get_one_page(url):
     try:
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1)' \
-                          'AppleWebKit/537.36 (KHTML, like Gecko)' \
-                          'Chrome/79.0.3945.79 Safari/537.36'
+            'User-Agent':   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1)' \
+                            'AppleWebKit/537.36 (KHTML, like Gecko)' \
+                            'Chrome/79.0.3945.79 Safari/537.36'
         }
 
         response = requests.get(url, headers=headers)
