@@ -1,6 +1,5 @@
 import requests
 import os
-import time
 from hashlib import md5
 from datetime import datetime
 from urllib.parse import urlencode
