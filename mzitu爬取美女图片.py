@@ -62,14 +62,12 @@ def get_pic(urls, title):
     下载网页上的图片
     '''
     for url in urls:
-        i = 1
         html = download_page(url)  # 下载界面
         soup = BeautifulSoup(html, 'html.parser')
         img_tag = soup.find(name='div', attrs={"class": "main-image"}).find('img')
         pic_link = img_tag.get('src')  # 拿到图片的具体 url
         create_dir('pic/{}'.format(title))
         print(title, i)
-        i += 1
         download_pic(pic_link, title)
 
 
