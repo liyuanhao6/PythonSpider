@@ -2,7 +2,7 @@ import random
 import time
 import requests
 
-from openpyxl import Workbook
+from openpyxl import Workbook # 3.0.1
 import pymysql.cursors
 
 
